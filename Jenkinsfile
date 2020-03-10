@@ -10,7 +10,7 @@ node('master')
     }
     stage('ContinuousDeployment_master')
     {
-        sh label: '','scp /var/lib/jenkins/workspace/multibranch1/webapp/target/webapp.war ubuntu@172.31.42.159:/home/ubuntu/var/lib/tomcat7/webapps/qaenv.war'
+        sh label: '','scp /var/lib/jenkins/workspace/multibranch1/webapp/target/webapp.war ubuntu@172.31.39.139:/home/ubuntu/var/lib/tomcat7/webapps/qaenv.war'
     }
     
     
