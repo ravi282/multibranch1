@@ -1,14 +1,14 @@
 node('master') 
 {
-    stage('ContinuousDownload_feature-3')
+    stage('ContinuousDownload_feature3')
     {
        git 'https://github.com/ravi282/multibranch1.git'
     } 
-    stage('ContinuousBuild_feature-3')
+    stage('ContinuousBuild_feature3')
     {
         sh label: '', script: 'mvn package'
     }
-    stage('ContinuousDeployment_feature-3')
+    stage('ContinuousDeployment_feature3')
     {
         sh 'echo "deployed successfully"'
     }
