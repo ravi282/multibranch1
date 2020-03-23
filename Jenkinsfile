@@ -10,7 +10,7 @@ node('master')
     }
     stage('ContinuousDeployment_feature')
     {
-        sh 'echo "deployed successfully"'
+        sh 'echo "deployed successsssfully"'
     }
     
     
